@@ -12,16 +12,35 @@ package bdlabbz2;
 
 	        Scanner sc = new Scanner(System.in);
 
-	        System.out.println("Enter coordinates of the first line");
+	        System.out.println("Enter first coordinates of the first line");
 	        int x1 = sc.nextInt();
 	        int y1 = sc.nextInt();
 
-	        System.out.println("Enter coordinates of the second line");
+	        System.out.println("Enter second coordinates of the first line");
 	        int x2 = sc.nextInt();
 	        int y2 = sc.nextInt();
 
-	        double length = distance(x1, y1, x2, y2);
-	        System.out.println("length of the line is " + length);
+	        System.out.println("Enter first coordinates of the second line");
+	        int x3 = sc.nextInt();
+	        int y3 = sc.nextInt();
+
+	        System.out.println("Enter second coordinates of the second line");
+	        int x4 = sc.nextInt();
+	        int y4 = sc.nextInt();
+
+	        double length1 = distance(x1, y1, x2, y2);
+	        double length2 = distance(x3, y3, x4, y4);
+	        System.out.println("length of the line 1 is " + length1);
+	        System.out.println("length of the line 2 is " + length2);
+
+	        if(Double.compare(length1, length2) == 0){
+	            System.out.println("line1 is equal to line2");
+	        }
+	        else if(Double.compare(length1, length2) < 0){
+	            System.out.println("line 1 is less than line 2");
+	        }else{
+	            System.out.println("line 1 is greater than line 2");
+	        }
 
 	        sc.close();
 	    }
