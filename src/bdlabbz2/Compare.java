@@ -36,10 +36,8 @@ package bdlabbz2;
 	        if(Double.compare(length1, length2) == 0){
 	            System.out.println("line1 is equal to line2");
 	        }
-	        else if(Double.compare(length1, length2) < 0){
-	            System.out.println("line 1 is less than line 2");
-	        }else{
-	            System.out.println("line 1 is greater than line 2");
+	        else {
+	        	System.out.println("line1 is not equal to line2");
 	        }
 
 	        sc.close();
